@@ -49,6 +49,7 @@ public abstract class SingletonTest<S> {
     @Test
     public void concurrent(){
 
+        //超时判断
         assertTimeout(ofMillis(10000), () -> {
             final List<Callable<S>> tasks = new ArrayList<>();
             for (int i = 0; i < 10000; i++) {

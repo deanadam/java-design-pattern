@@ -16,6 +16,8 @@ import org.junit.jupiter.api.Test;
  *
  * 针对 缺点 所以可以和工厂模式混合使用
  *
+ * 麦头条的热门算法 ，可以考虑用一下策略模式  排序逻辑  简单 复杂  降级
+ *
  */
 public class testStrategy {
     @Test
