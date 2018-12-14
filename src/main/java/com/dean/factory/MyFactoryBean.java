@@ -12,13 +12,13 @@ public class MyFactoryBean extends AbstractFactoryBean<Object> {
 
     @Override
     public Class<?> getObjectType() {
-        System.out.println("enter MyFactoryBean getObjectType...");
+//        System.out.println("enter MyFactoryBean getObjectType...");
         return People.class;
     }
 
     @Override
     protected Object createInstance() throws Exception {
-        System.out.println("enter MyFactoryBean createInstance...");
+//        System.out.println("enter MyFactoryBean createInstance...");
         return new People("factoryDemo", 18);
     }
 

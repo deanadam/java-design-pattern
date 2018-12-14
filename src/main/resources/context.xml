@@ -12,7 +12,7 @@
 
     <bean id="myFactoryBean" class="com.dean.factory.MyFactoryBean"></bean>
 
-    <bean id="studentSingle" class="com.dean.domain.Student" scope="singleton"></bean>
+    <bean id="studentSingle" class="com.dean.domain.Student" scope="singleton" ></bean>
     <bean id="studentPrototype" class="com.dean.domain.Student" scope="prototype"></bean>
 
 </beans>

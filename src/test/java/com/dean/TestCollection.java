@@ -21,22 +21,27 @@ public class TestCollection {
         s.add("aaaa");
         s.add("bbbb");
         s.add("cccc");
+        s.add(null);
         s.add("dddd");
+
+        s.stream().filter(item -> item !=null).forEach( (str) -> {
+            System.out.println(str);
+        });
 
 //        s.parallelStream().forEach( (str) -> {
 //            System.out.println(str);
 //        });
 
 
-        s.parallelStream().filter((str) -> {
-            if(StringUtils.isNotBlank(str) && str.equals("aaaa")){
-                return false;
-            }else{
-                return true;
-            }
-        }).forEach((str) -> {
-            System.out.println(str);
-        });
+//        s.parallelStream().filter((str) -> {
+//            if(StringUtils.isNotBlank(str) && str.equals("aaaa")){
+//                return false;
+//            }else{
+//                return true;
+//            }
+//        }).forEach((str) -> {
+//            System.out.println(str);
+//        });
     }
 
 }
